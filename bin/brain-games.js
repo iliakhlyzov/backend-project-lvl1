@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import * as cli from '../src/cli.js';
+import { getGreetings } from '../src/cli.js';
 
 console.log('Welcome to the Brain Games!');
-console.log(cli.getName());
+console.log(getGreetings);
