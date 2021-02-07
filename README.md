@@ -3,4 +3,5 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-https://github.com/iliakhlyzob//workflows/Node.js/badge.svg
+<a "https://github.com/iliakhlyzov//workflows/Node.js/badge.svg">
+[![Actions Status](https://github.com/iliakhlyzov/backend-project-lvl1/workflows/Node.js/badge.svg)](https://github.com/iliakhlyzov/backend-project-lvl1/actions)
