@@ -13,5 +13,5 @@ publish:
 lint:
 	npx eslint .
 
-am:
+commit:
 	git commit -am 'updated'
