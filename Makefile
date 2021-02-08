@@ -12,3 +12,6 @@ publish:
 
 lint:
 	npx eslint .
+
+am-upd:
+	make commit -am 'updated'
