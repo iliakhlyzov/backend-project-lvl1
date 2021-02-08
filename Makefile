@@ -14,4 +14,4 @@ lint:
 	npx eslint .
 
 am:
-	make commit -am 'updated'
+	git commit -am 'updated'
