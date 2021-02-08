@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import logic from '../../src/index.js';
 import getRandom from '../../src/getRandom.js';
 
