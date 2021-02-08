@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 
 import readlineSync from 'readline-sync';
+import getRandom from '../../src/getRandom.js';
 
-const getRandom = () => Math.floor(Math.random() * 100);
 const isEven = (num) => num % 2 === 0;
 const getBoolean = (answer) => {
   if (answer === 'yes' || answer === 'no') return answer === 'yes';
