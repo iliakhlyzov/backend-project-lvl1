@@ -7,3 +7,6 @@
 
 <h2>Brain-even</h2>
 <a href="https://asciinema.org/a/389710" target="_blank"><img src="https://asciinema.org/a/389710.svg" /></a>
+
+<h2>Brain-calc</h2>
+<a href="https://asciinema.org/a/389850" target="_blank"><img src="https://asciinema.org/a/389850.svg" /></a>
