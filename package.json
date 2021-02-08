@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/iliakhlyzov/backend-project-lvl1#readme",
   "bin": {
-    "brain-games": "bin/games/brain-games.js",
+    "brain-games": "bin/brain-games.js",
     "brain-even": "bin/games/brain-even.js"
   },
   "dependencies": {

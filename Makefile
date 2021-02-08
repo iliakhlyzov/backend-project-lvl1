@@ -2,7 +2,7 @@ install:
 	npm install
 
 brain-games:
-	node bin/games/brain-games.js
+	bin/brain-games.js
 
 brain-even:
 	bin/games/brain-even.js
@@ -12,3 +12,6 @@ publish:
 
 lint:
 	npx eslint .
+
+am:
+	make commit -am 'updated'
