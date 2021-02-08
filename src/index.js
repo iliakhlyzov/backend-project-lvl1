@@ -1,4 +1,7 @@
 // архитектура приложения
+// этот файл взаимодействует с пользователем, приинимает от него данные,
+// а также с логикой игры, принимает от нее правильный ответ
+// сравнивает решение и ответ
 import readlineSync from 'readline-sync';
 
 export default (gameDescription, startGame) => {
@@ -9,7 +12,10 @@ export default (gameDescription, startGame) => {
   const winsToEnd = 3;
   let wins = 0;
   while (wins !== winsToEnd) {
-    if (startGame()) {
+    const solution = startGame();
+    const answer = readlineSync.question('Your answer: ');
+    if (String(solution) === answer) {
+      console.log('Correct!');
       wins += 1;
     } else {
       console.log(`Let's try again, ${name}!`);
