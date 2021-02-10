@@ -16,3 +16,6 @@
 
 <h2>Brain-gcd</h2>
 <a href="https://asciinema.org/a/390352" target="_blank"><img src="https://asciinema.org/a/390352.svg" /></a>
+
+<h2>Brain-prima</h2>
+<a href="https://asciinema.org/a/390368" target="_blank"><img src="https://asciinema.org/a/390368.svg" /></a>
