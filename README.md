@@ -10,3 +10,9 @@
 
 <h2>Brain-calc</h2>
 <a href="https://asciinema.org/a/389850" target="_blank"><img src="https://asciinema.org/a/389850.svg" /></a>
+
+<h2>Brain-progression</h2>
+<a href="https://asciinema.org/a/390353" target="_blank"><img src="https://asciinema.org/a/390353.svg" /></a>
+
+<h2>Brain-gcd</h2>
+<a href="https://asciinema.org/a/390352" target="_blank"><img src="https://asciinema.org/a/390352.svg" /></a>
