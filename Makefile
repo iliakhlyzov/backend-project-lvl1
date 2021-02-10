@@ -4,12 +4,6 @@ install:
 brain-games:
 	bin/brain-games.js
 
-brain-even:
-	bin/games/brain-even.js
-
-brain-calc:
-	bin/games/brain-calc.js
-
 publish:
 	npm publish --dry-run
 
@@ -18,3 +12,6 @@ lint:
 
 commit:
 	git commit -am 'updated'
+
+asciinema:
+	asciinema rec
