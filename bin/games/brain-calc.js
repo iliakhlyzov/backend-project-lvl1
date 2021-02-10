@@ -19,8 +19,8 @@ const calculate = (number1, number2, operator) => {
 const getRandomOperator = (operators) => operators[Math.floor(Math.random() * operators.length)];
 
 const playGame = () => {
-  const number1 = getRandom();
-  const number2 = getRandom();
+  const number1 = getRandom(0, 10);
+  const number2 = getRandom(0, 10);
   const operators = ['+', '-', '*'];
   const operator = getRandomOperator(operators);
   const result = calculate(number1, number2, operator);

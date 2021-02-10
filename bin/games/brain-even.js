@@ -16,7 +16,7 @@ console.log(`Hello, ${name}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 let countRight = 0;
 while (countRight !== 3) {
-  const number = getRandom();
+  const number = getRandom(0, 10);
   console.log(`Question: ${number}`);
   const answer = readlineSync.question('Your answer: ');
   if (getBoolean(answer) === isEven(number)) {
