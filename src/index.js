@@ -14,7 +14,7 @@ export default (gameDescription, startGame) => {
   while (wins !== winsToEnd) {
     const solution = startGame();
     const answer = readlineSync.question('Your answer: ');
-    if (String(solution) === answer) {
+    if (solution === answer) {
       console.log('Correct!');
       wins += 1;
     } else {

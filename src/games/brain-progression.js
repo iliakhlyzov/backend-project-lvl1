@@ -33,7 +33,7 @@ const data = () => {
   const answer = array[indexOfHiddenElement];
 
   console.log(`Question: ${arrayWithoutElement}`);
-  return answer;
+  return String(answer);
 };
 
 export default () => logic(gameDescription, data);

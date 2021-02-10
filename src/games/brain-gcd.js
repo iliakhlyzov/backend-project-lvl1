@@ -10,7 +10,7 @@ const data = () => {
   const number2 = getRandom(0, 10);
   const gcd = findGcd(number1, number2);
   console.log(`Question: ${number2} ${number1}`);
-  return gcd;
+  return String(gcd);
 };
 
 export default () => logic(gameDescription, data);
