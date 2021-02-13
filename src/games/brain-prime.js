@@ -1,4 +1,4 @@
-import logic from '../index.js';
+import startGame from '../index.js';
 import getRandom from '../getRandom.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -12,9 +12,9 @@ const isPrime = (num) => {
   return true;
 };
 
-const data = () => {
+const getGame = () => {
   const number = getRandom(0, 100);
   console.log(`Question: ${number}`);
   return isPrime(number) ? 'yes' : 'no';
 };
-export default () => logic(gameDescription, data);
+export default () => startGame(gameDescription, getGame);

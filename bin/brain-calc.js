@@ -23,9 +23,10 @@ const playGame = () => {
   const number2 = getRandom(0, 10);
   const operators = ['+', '-', '*'];
   const operator = getRandomOperator(operators);
-  const result = calculate(number1, number2, operator);
+  const expectedAnswer = calculate(number1, number2, operator);
   console.log(`Question: ${number1} ${operator} ${number2}`);
-  return result;
+  console.log(expectedAnswer);
+  return String(expectedAnswer);
 };
 
 logic(gameDescription, playGame);

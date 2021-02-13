@@ -1,4 +1,4 @@
-import logic from '../index.js';
+import startGame from '../index.js';
 import getRandom from '../getRandom.js';
 
 const gameDescription = 'What number is missing in the progression?';
@@ -21,7 +21,7 @@ const hideElement = (array, index) => {
   return copyArray;
 };
 
-const data = () => {
+const getGame = () => {
   const lengthOfArray = getRandom(5, 10);
   const firstElement = getRandom(0, 100);
   const step = getRandom(1, 10);
@@ -36,4 +36,5 @@ const data = () => {
   return String(answer);
 };
 
-export default () => logic(gameDescription, data);
+export default () => startGame(gameDescription, getGame);
+
