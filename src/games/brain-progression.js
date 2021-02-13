@@ -31,7 +31,8 @@ const getGame = () => {
   const arrayWithoutElement = hideElement(array, indexOfHiddenElement);
 
   const answer = array[indexOfHiddenElement];
-  return [String(answer), `${arrayWithoutElement}`];
+  const task = arrayWithoutElement.join(' ');
+  return [String(answer), task];
 };
 
 export default () => startGame(gameDescription, getGame);
