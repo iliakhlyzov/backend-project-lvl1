@@ -19,6 +19,7 @@ export default (gameDescription, startGame, roundCount = 3) => {
       console.log('Correct!');
       round += 1;
     } else {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${solution}'.`);
       console.log(`Let's try again, ${name}!`);
       isWin = false;
       break;
