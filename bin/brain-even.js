@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 
 import readlineSync from 'readline-sync';
-import getRandom from '../../src/getRandom.js';
+import getRandom from '../src/getRandom.js';
 
 const isEven = (num) => num % 2 === 0;
 const getBoolean = (answer) => {

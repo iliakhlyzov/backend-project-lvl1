@@ -37,4 +37,3 @@ const getGame = () => {
 };
 
 export default () => startGame(gameDescription, getGame);
-

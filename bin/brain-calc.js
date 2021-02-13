@@ -1,32 +1,5 @@
 #!/usr/bin/env node
 
-import logic from '../../src/index.js';
-import getRandom from '../../src/getRandom.js';
+import runGame from '../src/games/brain-calc.js';
 
-const gameDescription = 'What is the result of the expression?';
-const calculate = (number1, number2, operator) => {
-  switch (operator) {
-    case '+':
-      return (number1 + number2);
-    case '*':
-      return (number1 * number2);
-    case '-':
-      return (number1 - number2);
-    default:
-      return null;
-  }
-};
-const getRandomOperator = (operators) => operators[Math.floor(Math.random() * operators.length)];
-
-const playGame = () => {
-  const number1 = getRandom(0, 10);
-  const number2 = getRandom(0, 10);
-  const operators = ['+', '-', '*'];
-  const operator = getRandomOperator(operators);
-  const expectedAnswer = calculate(number1, number2, operator);
-  console.log(`Question: ${number1} ${operator} ${number2}`);
-  console.log(expectedAnswer);
-  return String(expectedAnswer);
-};
-
-logic(gameDescription, playGame);
+runGame();

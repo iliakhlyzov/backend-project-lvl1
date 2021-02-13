@@ -16,7 +16,6 @@ const calculate = (number1, number2, operator) => {
   }
 };
 
-
 const getGame = () => {
   const number1 = getRandom(0, 10);
   const number2 = getRandom(0, 10);
@@ -28,4 +27,3 @@ const getGame = () => {
 };
 
 export default () => startGame(gameDescription, getGame);
-
