@@ -7,8 +7,7 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 const getGame = () => {
   const number = getRandom(0, 10);
-  console.log(`Question: ${number}`);
-  return isEven(number) ? 'yes' : 'no';
+  return [isEven(number) ? 'yes' : 'no', number];
 };
 
 export default () => startGame(gameDescription, getGame);

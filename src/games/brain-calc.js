@@ -22,8 +22,8 @@ const getGame = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[getRandom(0, operators.length - 1)];
   const result = calculate(number1, number2, operator);
-  console.log(`Question: ${number1} ${operator} ${number2}`);
-  return String(result);
+  const task = `${number1} ${operator} ${number2}`;
+  return [String(result), task];
 };
 
 export default () => startGame(gameDescription, getGame);

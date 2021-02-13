@@ -12,7 +12,8 @@ export default (gameDescription, startGame) => {
   const winsToEnd = 3;
   let wins = 0;
   while (wins !== winsToEnd) {
-    const solution = startGame();
+    const [solution, question] = startGame();
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (solution === answer) {
       console.log('Correct!');

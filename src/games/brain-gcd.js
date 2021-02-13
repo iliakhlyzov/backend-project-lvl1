@@ -9,8 +9,8 @@ const getGame = () => {
   const number1 = getRandom(0, 10);
   const number2 = getRandom(0, 10);
   const gcd = findGcd(number1, number2);
-  console.log(`Question: ${number2} ${number1}`);
-  return String(gcd);
+  const task = `${number2} ${number1}`;
+  return [String(gcd), task];
 };
 
 export default () => startGame(gameDescription, getGame);
