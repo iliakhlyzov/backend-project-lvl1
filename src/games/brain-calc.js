@@ -19,7 +19,7 @@ const calculate = (number1, number2, operator) => {
 const getGame = () => {
   const number1 = getRandom(0, 10);
   const number2 = getRandom(0, 10);
-  const operators = ['+', '-', '*'];
+  const operators = '+-*';
   const operator = operators[getRandom(0, operators.length - 1)];
   const result = calculate(number1, number2, operator);
   const task = `${number1} ${operator} ${number2}`;
