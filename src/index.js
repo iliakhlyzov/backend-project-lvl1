@@ -13,7 +13,7 @@ export default (gameDescription, startGame) => {
   console.log(`Hello, ${name}!`);
   console.log(gameDescription);
   for (let round = 0; round < roundsCount; round += 1) {
-    const [correctAnswer, question] = startGame(); 
+    const [correctAnswer, question] = startGame();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (correctAnswer === answer) {
@@ -21,8 +21,8 @@ export default (gameDescription, startGame) => {
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-      return; 
+      return;
     }
   }
-    console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
